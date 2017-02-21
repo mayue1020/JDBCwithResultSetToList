@@ -17,13 +17,14 @@ public class main {
 			e1.printStackTrace();
 		}
 		rs = database.getSQL(SQL);
-		List list = new ArrayList();
+		List list1 = new ArrayList();
+		List list2 = new ArrayList();
 		try {
 			while(rs.next()){
 				System.out.println(rs.getString(1));
-				list.add(rs.getString(1));
+				list1.add(rs.getString(1));
 				System.out.println(rs.getString(2));
-				list.add(rs.getString(2));
+				list2.add(rs.getString(2));
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
